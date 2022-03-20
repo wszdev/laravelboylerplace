@@ -22,3 +22,13 @@ Auth::routes();
 
 Route::get('/admin', [HomeController::class, 'index'])->name('admin-db');
 
+
+Route::get('/make-migration', [HomeController::class, 'makeMigration']);
+
+
+// Route::get('/roleback-migration', [HomeController::class, 'resetDatabase']);
+
+
+Route::get('/run', [HomeController::class, 'editENVfile']);
+
+Route::get('/dynamic-redirect', [HomeController::class, "testRed"]);
